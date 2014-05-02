@@ -8,14 +8,15 @@ namespace AssemblyCSharp
 	{
 		public enum State
 		{
-			Sleep,
+			SleepOutside,
 			Stay,
 			Walk,
 			Eating,
 			Mating,
 			Hunting,
 			Stalking,
-			Dead
+			Dead,
+			InHome
 		};
 		public enum Param
 		{
@@ -39,6 +40,8 @@ namespace AssemblyCSharp
 		public Transform gutPrefab;
 		public State state = State.Stay;
 		public Transform gameObject;
+
+
 
 		public Gut (int i, int j)
 		{

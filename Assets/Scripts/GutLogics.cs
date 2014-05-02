@@ -8,6 +8,14 @@ namespace AssemblyCSharp
 	{
 		public Transform gutPrefab;
 
+		public enum MapObjects
+		{
+			Ground,
+			Cantgo
+		}
+
+		public MapObjects[,] map;
+
 		public Dictionary<Gut.Param, Dictionary<Gut.State, float>> speeds = 
 		new Dictionary<Gut.Param, Dictionary<Gut.State, float>>()
 		{
@@ -84,7 +92,13 @@ namespace AssemblyCSharp
 					}
 				}
 			}
-			
 		}
+
+		void GoTo(int i, int j)
+		{
+
+		}
+
+
 	}
 }
