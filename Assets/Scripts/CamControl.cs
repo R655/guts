@@ -22,8 +22,8 @@ public class CamControl : MonoBehaviour {
 			direction = Vector3.back;
 		else if(Input.GetKeyDown(KeyCode.D))
 			direction = Vector3.right;*/
-		direction = Vector3.left*Input.GetAxis ("Horizontal");
-		direction += Vector3.back*Input.GetAxis ("Vertical");
+		direction = Vector3.right*Input.GetAxis ("Horizontal");
+		direction += Vector3.forward*Input.GetAxis ("Vertical");
 		if (Input.GetButton ("Fire3")) 
 		{
 			gameObject.transform.Translate (-direction * speed);
@@ -35,9 +35,9 @@ public class CamControl : MonoBehaviour {
 		}
 		else
 		{
-			gameObject.transform.Rotate (
-				new Vector3 (Input.GetAxis("Mouse ScrollWheel"), 0f)
-				* sensitive*(-5f));
+			//gameObject.transform.Rotate (
+				//new Vector3 (Input.GetAxis("Mouse ScrollWheel"), 0f)
+				//* sensitive*(-5f));
 			gameObject.transform.Translate (Input.GetAxis("Mouse ScrollWheel")*Vector3.forward * sensitive);
 			gameObject.transform.position += direction * speed;
 		}

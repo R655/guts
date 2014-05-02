@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: waterMaterial
-  m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 1beede6c5b427f54b96854bb3a17bec5, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -20,9 +20,104 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-    m_Floats: {}
+      data:
+        first:
+          name: _LowTexture
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HighTexture
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TurbulenceMapX
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TurbulenceMapY
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TurbulenceMapZ
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Octaves
+        second: 12.8571424
+      data:
+        first:
+          name: _Texturing
+        second: -1
+      data:
+        first:
+          name: _TurbulencePower
+        second: .150000006
+      data:
+        first:
+          name: _Frequency
+        second: .0199999996
+      data:
+        first:
+          name: _Amplitude
+        second: 10.6499996
+      data:
+        first:
+          name: _Lacunarity
+        second: 0
+      data:
+        first:
+          name: _Persistence
+        second: .879999995
+      data:
+        first:
+          name: _Contribution
+        second: 1
+      data:
+        first:
+          name: _Normalize
+        second: -1
+      data:
+        first:
+          name: _Powered
+        second: -1
+      data:
+        first:
+          name: _BillowPower
+        second: 1
     m_Colors:
       data:
         first:
           name: _Color
         second: {r: .316176474, g: .688742459, b: 1, a: 1}
+      data:
+        first:
+          name: _LowColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _HighColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _NoiseOffset
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _NoiseScale
+        second: {r: 1, g: 1, b: 1, a: 1}
