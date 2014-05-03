@@ -23,7 +23,6 @@ namespace AssemblyCSharp
 				Gut.Param.Starve,
 				new Dictionary<Gut.State, float>() 
 				{
-					{Gut.State.Sleep, -0.1f},
 					{Gut.State.Walk, -0.5f},
 					{Gut.State.Stay, -0.3f},
 					{Gut.State.Eating, 0.3f}
@@ -33,7 +32,6 @@ namespace AssemblyCSharp
 				Gut.Param.Age,
 				new Dictionary<Gut.State, float>() 
 				{
-					{Gut.State.Sleep, 0.3f},
 					{Gut.State.Walk, 0.3f},
 					{Gut.State.Stay, 0.3f},
 					{Gut.State.Eating, 0.3f}
@@ -43,7 +41,6 @@ namespace AssemblyCSharp
 				Gut.Param.Fatique,
 				new Dictionary<Gut.State, float>() 
 				{
-					{Gut.State.Sleep, 0.5f},
 					{Gut.State.Walk, -0.5f},
 					{Gut.State.Stay, 0.1f},
 					{Gut.State.Eating, 0.1f}
@@ -94,8 +91,13 @@ namespace AssemblyCSharp
 			}
 		}
 
-		void GoTo(int i, int j)
+		void AStar(Int2 a, Int2 b)
 		{
+			LinkedList<Int2> closed = new LinkedList<Int2>();
+			LinkedList<Int2> open = new LinkedList<Int2>();
+			open.AddLast(a);
+
+			LinkedList<Int2> pathMap = new LinkedList<Int2>();
 
 		}
 
